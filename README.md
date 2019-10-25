@@ -26,3 +26,15 @@ python
 from extract_features import get_vector
 get_vector('dress.jpeg')
 ```
+
+## Lesson 1 and 1.5. Use Docker
+Locally:
+```bash
+docker build -t visual_search .
+docker run -it --rm visual_search bash
+```
+On Cloud GPU Compute:
+```bash
+docker build -t visual_search .
+nvidia-docker run -it --rm visual_search bash
+```
