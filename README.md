@@ -3,12 +3,11 @@ Scott Cronin, Ph.D.
 Senior Data Scientist  
 ShopRunner
 
-This repo goes alongside an ODSC West Talk from 2019.
-![ODSC Presentation](https://github.com/jscottcronin/odsc_west_2019_visual_search/blob/master/ODSC%20West%202019%20Presentation.pdf)
-
+This repo goes alongside an ODSC West Talk from 2019.  
+[ODSC West 2019 -- Presentation](./ODSC_West_2019_Presentation.pdf)
 
 # Development
-## Feature Extraction
+## Setup
 
 The folowing code allows us to extract a feature vector from a local image file called `dress.jpeg`
 
@@ -16,16 +15,6 @@ The folowing code allows us to extract a feature vector from a local image file 
 # Clone the repo
 git clone https://github.com/jscottcronin/odsc_west_2019_visual_search.git
 cd odsc_west_2019_visual_search/
-
-# Build and Run Pytorch Container
-docker build -t visual_search .
-docker run -it --rm visual_search bash
-
-# start a python kernel
-python
-
-from extract_features import get_vector
-get_vector('dress.jpeg')
 ```
 
 ## Lesson 1 and 1.5. Use Docker
@@ -39,3 +28,8 @@ On Cloud GPU Compute:
 docker build -t visual_search .
 nvidia-docker run -it --rm visual_search bash
 ```
+Start jupyter from within container:
+```bash
+jupyter lab --ip 0.0.0.0 --no-browser --allow-root
+```
+**Note: if on a cloud compute, you'll need the port 8888 opened on the instance 
