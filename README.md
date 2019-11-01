@@ -4,6 +4,7 @@ Senior Data Scientist
 ShopRunner
 
 This repo goes alongside an ODSC West Talk from 2019.
+![ODSC Presentation](https://github.com/jscottcronin/odsc_west_2019_visual_search/blob/master/ODSC%20West%202019%20Presentation.pdf)
 
 
 # Development
